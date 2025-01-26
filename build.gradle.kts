@@ -21,12 +21,15 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	runtimeOnly("org.postgresql:postgresql")
+	implementation("org.springframework:spring-jdbc:6.2.2")
+	implementation("org.postgresql:postgresql:42.7.5")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("org.springframework.boot:spring-boot-testcontainers")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("org.testcontainers:junit-jupiter")
-	testImplementation("org.testcontainers:postgresql")
+	testImplementation("org.testcontainers:postgresql:1.20.4")
+	testImplementation("org.flywaydb:flyway-core:8.5.13")
+
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
