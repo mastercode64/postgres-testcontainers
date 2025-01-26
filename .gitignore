@@ -1,6 +1,7 @@
-.idea/                    # Configurações do IntelliJ IDEA
-*.iml                     # Arquivos de módulo do IntelliJ
-out/                      # Diretório de saída
+.idea/
+*.iws
+*.iml
+*.ipr
 
 # Diretórios de build e logs
 /build/
